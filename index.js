@@ -26,11 +26,6 @@ var actions = [
 ];
 
 var heroGender;
-if (Math.random() < 0.5) {
-	heroGender = "heroine";
-} else {
-	heroGender = "hero";
-}
 
 /*
 	TODO: The following three lines of code have a lot of repetition and are
@@ -65,10 +60,10 @@ function chosen(arr) {
 
 document.getElementById("adventure").innerText = output;
 }
-var element = document.getElementById("new_adventure");
+// var element = document.getElementById("new_adventure");
 
-element.onclick = newAdventure;
-
+// element.onclick = newAdventure;
+document.getElementById("new_adventure").onclick = newAdventure
 window.onload = newAdventure;
 
 /*
